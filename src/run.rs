@@ -16,6 +16,7 @@ pub fn run(exercise: &Exercise) -> Result<(), ()> {
 }
 
 // Resets the exercise by stashing the changes.
+
 pub fn reset(exercise: &Exercise) -> Result<(), ()> {
     let command = Command::new("git")
         .args(["stash", "--"])
