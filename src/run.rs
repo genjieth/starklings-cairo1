@@ -6,6 +6,7 @@ use crate::exercise::{Exercise, Mode};
 // and run the ensuing binary.
 // The verbose argument helps determine whether or not to show
 // the output from the test harnesses (if the mode of the exercise is test)
+
 pub fn run(exercise: &Exercise) -> Result<(), ()> {
     match exercise.mode {
         Mode::Build => build_cairo(exercise)?,
