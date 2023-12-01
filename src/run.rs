@@ -31,6 +31,7 @@ pub fn reset(exercise: &Exercise) -> Result<(), ()> {
 // Invoke the rust compiler on the path of the given exercise
 // and run the ensuing binary.
 // This is strictly for non-test binaries, so output is displayed
+
 fn build_cairo(exercise: &Exercise) -> Result<(), ()> {
     println!("\nBuilding {exercise}...\n");
     let output = exercise.build();
