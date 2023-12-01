@@ -71,6 +71,7 @@ fn run_cairo(exercise: &Exercise) -> Result<(), ()> {
 // Invoke the rust compiler on the path of the given exercise
 // and run the ensuing binary.
 // This is strictly for non-test binaries, so output is displayed
+
 fn test_cairo(exercise: &Exercise) -> Result<(), ()> {
     println!("\nTesting {exercise}...\n");
     let output = exercise.test();
